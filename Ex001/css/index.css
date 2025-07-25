@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#Resultado{
+    border-color: black;
+}
+
+label{
+    color: blue;
+}
+h1{
+    font-family: "Arial Black";
+
+}
+
+#primeiroNumero:hover, #segundoNumero:hover{
+    background-color: rgba(165, 42, 42, 0.49);
+}
