@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import teste from './components/teste.vue'
 </script>
 
 <template>
@@ -9,8 +10,9 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <p> </p>
+
     </div>
+    <teste/>
   </header>
 
   <main>
@@ -27,7 +29,7 @@ header {
   display: block;
   margin: 0 auto 2rem;
 }
- 
+
 @media (min-width: 1024px) {
   header {
     display: flex;
