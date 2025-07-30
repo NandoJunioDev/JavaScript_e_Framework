@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import teste from './components/teste.vue'
 </script>
 
 <template>
@@ -9,8 +10,13 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+<<<<<<< HEAD
       <p> z</p>
+=======
+
+>>>>>>> refs/remotes/origin/main
     </div>
+    <teste/>
   </header>
 
   <main>
