@@ -2,6 +2,41 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import teste from './components/teste.vue'
+import {ref} from "vue";
+
+  const array = ref([
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "delectus aut autem",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "quis ut nam facilis et officia qui",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "fugiat veniam minus",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "et porro tempora",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+      "completed": false
+    }
+  ])
+
 </script>
 
 <template>
@@ -14,15 +49,26 @@ import teste from './components/teste.vue'
       <p> z</p>
 =======
 
->>>>>>> refs/remotes/origin/main
+
     </div>
-    <teste/>
+    <teste > </teste>
   </header>
+
+
+  <div v-for="obj in array" v-bind:key="obj.id" class="teste" >
+
+    {{obj.title}}
+  </div>
 
   <main>
     <TheWelcome />
   </main>
+
+
+
+
 </template>
+
 
 <style scoped>
 header {
@@ -50,5 +96,8 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+.teste{
+
 }
 </style>
