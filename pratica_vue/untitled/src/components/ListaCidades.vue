@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import {ref} from "vue";
   let testa = ref()
+
+
 </script>
 
 <template>
 
-  <label for="testa"> Selecione  as cidades em baixo</label>
+  <label for="city" @keyup.enter="fetc"> Selecione  as cidades em baixo</label>
        <select v-model="testa">
          <option value="">Selecione</option>
          <option value="rioDeJaneiro">Rio de Janeiro</option>
